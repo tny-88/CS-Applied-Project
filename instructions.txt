@@ -1,0 +1,5 @@
+Run react / tailwind:
+npm run dev
+
+Run Flask:
+flask run
