@@ -58,7 +58,7 @@ export default function LessonVideo() {
          <div
            className="relative"
            style={{
-             paddingBottom: "56.25%" /* 16:9 ratio */,
+             paddingBottom: "56.25%",
              height: 0,
              overflow: "hidden",
              maxWidth: "100%",

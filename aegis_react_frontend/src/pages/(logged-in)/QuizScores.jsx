@@ -7,7 +7,6 @@ export default function QuizScores() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    // Get user data from cookies
     const userDataCookie = Cookies.get("userData");
     if (!userDataCookie) {
       setError('No user data found. Please log in.');
