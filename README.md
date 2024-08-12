@@ -1,4 +1,4 @@
-# Capstone React Implementation
+# Readme
 
 In order to run the the project, you need to install:
 Python, Flask and Node.js
