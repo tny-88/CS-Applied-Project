@@ -9,7 +9,7 @@ export default function AddEditQuestionModal({ question, onClose, onSubmit }) {
     if (question) {
       setQuestionText(question.question_text);
       setOptions(question.options);
-      setCorrectAnswer(question.correct_answer + 1); // Adjust for human-readable index
+      setCorrectAnswer(question.correct_answer + 1); 
     } else {
       setQuestionText('');
       setOptions(['', '', '', '']);
@@ -27,7 +27,7 @@ export default function AddEditQuestionModal({ question, onClose, onSubmit }) {
       ...question,
       question_text: questionText,
       options,
-      correct_answer: correctAnswer - 1, // Convert back to 0-based index
+      correct_answer: correctAnswer - 1,
     };
     onSubmit(updatedQuestion);
   };

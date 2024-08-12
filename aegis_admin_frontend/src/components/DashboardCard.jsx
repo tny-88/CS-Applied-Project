@@ -9,7 +9,6 @@ const extractCourseID = (id) => {
 export default function DashboardCard({ title, description, courseID }) {
   const navigate = useNavigate();
 
-  // Function to truncate description and add ellipsis
   const truncateText = (text, maxLength) => {
     if (text.length <= maxLength) {
       return text;
@@ -17,7 +16,6 @@ export default function DashboardCard({ title, description, courseID }) {
     return text.substring(0, maxLength) + '...';
   };
 
-  // Truncate description to 100 characters or any desired length
   const truncatedDescription = truncateText(description, 100);
 
   return (

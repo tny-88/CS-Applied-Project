@@ -5,7 +5,6 @@ export default function LoginForm() {
 
   const handleLogin = async (event) => {
     event.preventDefault();
-    // Get form data
     const formData = new FormData(event.target);
     const data = {
       admin_id: formData.get("admin_id"),
@@ -13,7 +12,6 @@ export default function LoginForm() {
     };
 
     try {
-      //Replace with IP address of your machine
       const response = await fetch("http://127.0.0.1:5000/api/login_admin", {
         method: "POST",
         headers: {

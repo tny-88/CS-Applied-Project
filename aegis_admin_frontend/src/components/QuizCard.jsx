@@ -9,12 +9,12 @@ export default function QuizCard({ quiz, onEdit, onDelete }) {
   };
 
   const handleEditClick = (event) => {
-    event.stopPropagation(); // Prevents the card click event
+    event.stopPropagation();
     onEdit(quiz);
   };
 
   const handleDeleteClick = (event) => {
-    event.stopPropagation(); // Prevents the card click event
+    event.stopPropagation(); 
     onDelete(quiz.quiz_id);
   };
 

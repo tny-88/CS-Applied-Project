@@ -61,7 +61,7 @@ export default function QuizSelect() {
 
       if (response.ok) {
         alert('Quiz deleted successfully.');
-        setQuizzes(quizzes.filter(quiz => quiz.quiz_id !== quizID)); // Update state
+        setQuizzes(quizzes.filter(quiz => quiz.quiz_id !== quizID));
       } else {
         const errorResult = await response.json();
         alert(errorResult.error);
@@ -86,7 +86,7 @@ export default function QuizSelect() {
       if (response.ok) {
         alert(`Quiz ${quiz.quiz_id ? 'edited' : 'added'} successfully.`);
         setIsAddEditModalVisible(false);
-        fetchQuizzes(courseID).then((data) => setQuizzes(data)); // Refresh quizzes list
+        fetchQuizzes(courseID).then((data) => setQuizzes(data));
       } else {
         const errorResult = await response.json();
         alert(errorResult.error);
